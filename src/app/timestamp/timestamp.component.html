@@ -1,0 +1,8 @@
+<header>
+    <div id="logo">Монитор</div>
+    <div id="datetime">{{ currentDateTime }}</div>
+  </header>
+
+<div class="container">
+    <div class="item" *ngFor="let timestampString of timestampStrings">{{ timestampString }}</div>
+</div>
