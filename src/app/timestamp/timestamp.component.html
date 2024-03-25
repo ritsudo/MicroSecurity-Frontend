@@ -1,8 +1,12 @@
 <header>
     <div id="logo">Монитор</div>
-    <div id="datetime">{{ currentDateTime }}</div>
-  </header>
+    <div id="datetime">Computer time: {{ currentDateTime }}</div>
+    <div id="datetime">Controller time: {{ controllerDateTime }}</div>
+</header>
+    <div *ngIf="isErrorVisible" id="logo-red">Сбой синхронизации. Проверьте питание контроллера!</div>
 
 <div class="container">
     <div class="item" *ngFor="let timestampString of timestampStrings">{{ timestampString }}</div>
 </div>
+
+<div class="hover-button" (click)="onClick()">Очистить</div>

@@ -36,3 +36,29 @@ header {
     font-size: 24px;
     font-weight: bold;
 }
+
+#logo-red {
+    background-color: #ff1c1c;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hover-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(140, 227, 69);
+    color: rgb(0, 0, 0);
+    padding: 20px 40px;
+    font-size: 2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hover-button:hover {
+    background-color: rgb(102, 167, 50);
+  }
